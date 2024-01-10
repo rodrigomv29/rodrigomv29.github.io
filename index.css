@@ -1,8 +1,8 @@
-.nav-wrapper{
-    list-style: inline-block;
+ul {
+    list-style: none;
 }
 .nav-list {
-    list-style: inline-block;
+    display: inline-block;
 
 }
 .diary-wrapper{
