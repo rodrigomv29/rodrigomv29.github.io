@@ -1,6 +1,10 @@
+html{
+    text-decoration: none
+}
 ul {
     list-style: none;
 }
+
 .nav-list {
     display: inline-block;
     margin-right: 15px;
