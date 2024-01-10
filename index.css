@@ -1,6 +1,10 @@
 .nav-wrapper{
     list-style: inline-block;
 }
+.nav-list {
+    list-style: inline-block;
+
+}
 .diary-wrapper{
     color: crimson;
     text-align: center;
