@@ -1,5 +1,6 @@
 html{
-    text-decoration: none
+    text-decoration: none;
+    color:salmon
 }
 ul {
     list-style: none;
@@ -16,5 +17,9 @@ ul {
 }
 .day-wrapper{
     text-align:center;
+    color: darksalmon;
+    border-radius: 10px;
+    border-color: red;
+    border-width: 6px;
 }
 
