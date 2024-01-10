@@ -1,5 +1,5 @@
 .nav-wrapper{
-    list-style: none;
+    list-style: inline-block;
 }
 .diary-wrapper{
     color: crimson;
