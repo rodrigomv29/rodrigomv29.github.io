@@ -3,6 +3,7 @@ ul {
 }
 .nav-list {
     display: inline-block;
+    margin-right: 15px;
 
 }
 .diary-wrapper{
