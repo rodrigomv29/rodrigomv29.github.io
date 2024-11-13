@@ -17,7 +17,7 @@ module.exports = {
     extensions: ['.tsx', '.ts', '.js'],
   },
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: '/rodrigomv29.github.io/',
     filename: 'bundle.js',
   },
   devServer: {
