@@ -1,16 +1,12 @@
-import React from "react";
+import * as React from 'react';
+import HelloWorld from './HelloWorld';
 
-function MyButton({ title }: { title: string }) {
-    return (
-      <button>{title}</button>
-    );
-  }
-  
-  export default function MyApp() {
-    return (
-      <div>
-        <h1>Welcome to my app</h1>
-        <MyButton title="I'm a button" />
-      </div>
-    );
-  }
+const App: React.FC = () => {
+  return (
+    <div>
+      <HelloWorld name="World" />
+    </div>
+  );
+};
+
+export default App;

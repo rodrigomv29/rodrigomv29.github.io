@@ -2,7 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
-  entry: './src/index.tsx',
+  entry: './index.tsx',
   mode: 'development',
   module: {
     rules: [
@@ -21,7 +21,7 @@ module.exports = {
     filename: 'bundle.js',
   },
   devServer: {
-    contentBase: './dist',
+    static: './',
     port: 3000,
   },
 };
