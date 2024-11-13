@@ -1,11 +1,12 @@
 import * as React from 'react';
 
 interface Props {
-  name: string;
+  age: string;
 }
 
-const HelloWorld: React.FC<Props> = ({ name }) => {
-  return <h1>Hello, {name}!</h1>;
+const HelloWorld: React.FC<Props> = ({ age }) => {
+  return <h1>Hello, {age}!</h1>;
+
 };
 
 export default HelloWorld
