@@ -4,18 +4,41 @@ import LoginPage from './components/Login';
 
 const App: React.FC = () => {
     const [user, setUser] = useState(undefined)
+    const [joke, setJoke] = useState('')
+
+    const fetchJoke = async () => {
+        try {
+            const response = await fetch('https://icanhazdadjoke.com/', {
+                headers: {
+                    Accept: "application/json",
+                },
+            });
+            const data = await response.json()
+            setJoke(data.joke)
+        }
+        catch(error){
+            console.error("Error")
+            setJoke("Error fetching a joke");
+        }
+    };
+    
     if(!user){
-        return <LoginPage onLogin={function (email: string, password: string): void {
-            throw new Error('Function not implemented.');
-        } }></LoginPage>
+        return (
+            <div>
+              <HelloWorld name="Rodrigo Morales" />
+            </div>
+          );
     }
     else{
         return (
             <div>
-              <HelloWorld name="Rodrigo Morales (PAGE UNDER CONSTRUCTION..)" />
+                <button onClick={fetchJoke}>
+                    Tell me a joke
+                </button>
+                {joke && <p>{joke}</p>}
             </div>
-          );
-
+        )
+        
     }
 
   
