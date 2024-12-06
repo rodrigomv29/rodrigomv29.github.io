@@ -119,3 +119,26 @@ body {
 .btn-box a:hover::before{
     width: 100%;
 }
+.portfolio{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+
+}
+.portfolio-content{
+    min-width: 90vw;
+}
+.portfolio-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+}
+.project-box{
+    width:100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 20px;
+    background: black;
+    margin: 10 10;
+}
