@@ -1,2 +1,1 @@
-const lastUpdatedSpan = document.querySelector(".last-updated")
-lastUpdatedSpan.textContent = new Date(document.lastModified).toLocaleDateString();
+let lastUpdatedSpan = document.querySelector(".last-updated").textContent = new Date(document.lastModified).toLocaleDateString()
