@@ -134,6 +134,11 @@ body {
     font-weight: 700;
     color: #00abf0;
 }
+.portfolio-content p{
+    font-size: 8x;
+    font-weight: 600;
+    color:#ededed;
+}
 .project-box{
     width:100%;
     box-sizing: border-box;
