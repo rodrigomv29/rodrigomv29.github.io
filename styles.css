@@ -157,3 +157,33 @@ body {
 .about-content{
     min-width: 90vw;
 }
+.contact{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+
+}
+.contact-content{
+    min-width: 90vw;
+}
+.stats{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+
+}
+.stats-content{
+    min-width: 90vw;
+}
+.services{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+
+}
+.services-content{
+    min-width: 90vw;
+}
