@@ -12,3 +12,8 @@ async function getQuoteData() {
     }
     return json;
 }
+const nowMonth = Date.now()
+if (nowMonth.getFullYear() == "11"){
+    // read first line of used-quote    
+        
+}
