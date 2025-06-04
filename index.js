@@ -1,6 +1,5 @@
-let lastUpdatedSpan = document.querySelector(".last-updated").textContent = new Date(document.lastModified).toLocaleDateString()
-const api_url ="http://zenquotes.io/api/random/";
-console.log("HELLO WORLD!!")
+const api_url ="https://api.allorigins.win/raw?url=https://zenquotes.io/api/random/";
+//console.log("HELLO WORLD!!")
 async function getapi(url)
 {
     try {
@@ -27,7 +26,7 @@ async function main() {
     if(data && data[0] && data[0]['q'] && data[0]['a']) {
         console.log(data[0]['q']);
         console.log(data[0]['a']);
-        return 'FUNNY'
+        return `${data[0]['q']}- ${data[0]['a']}`
         
     }
     else  {
@@ -36,7 +35,11 @@ async function main() {
    
 }
 
-let quote_text = document.querySelector(".quote-msg").textContent = main()
+main().then(result =>{
+    document.querySelector(".last-updated").textContent = new Date(document.lastModified).toLocaleDateString()
+    document.querySelector(".quote-msg").textContent = result;
+
+});
 
 
 async function quote_limit() {
