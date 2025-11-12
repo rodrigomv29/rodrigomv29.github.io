@@ -1,5 +1,6 @@
 const api_url = encodeURI("https://api.allorigins.win/raw?url=https://zenquotes.io/api/random/");
 //console.log("HELLO WORLD!!")
+//hello 
 async function getapi(url)
 {
     try {
