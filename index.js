@@ -2,7 +2,7 @@ const api_url = encodeURI("https://api.allorigins.win/raw?url=https://zenquotes.
 //console.log("HELLO WORLD!!")
 //hello
 //small change
- 
+//new change 
 async function getapi(url)
 {
     try {
